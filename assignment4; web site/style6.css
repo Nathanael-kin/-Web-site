@@ -1,0 +1,151 @@
+body
+{
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  background: linear-gradient(30deg, rgb(10, 247, 50), rgb(7, 41, 6), rgb(98, 250, 98));
+}
+h3
+{
+    font-size: 200%;
+    text-align: center;
+    color: whitesmoke;
+}
+nav ul
+{
+ background-color: lightgreen;
+ list-style: lower-roman;
+ text-align: center;
+ padding: 0.5%;
+}
+nav a 
+{
+ color: whitesmoke;
+ display: block;
+ decoration: none;
+ width: 100px;
+ padding: 20px 25px;
+ font-size: 15px;
+ text-transform: uppercase;
+ font-weight: bold;
+ text-align: center;
+}
+nav li
+{
+    display: inline-block;
+}
+ .container
+ {
+  width: 100px;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+ }
+ .imgcontainer
+ {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+ }
+ .slide_div
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+ }
+ img
+ {
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgb(0, 0, 0.4);
+    border-radius: 20px;
+ }
+ .button
+ {
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgb(0, 0, 0.4);
+    border-radius: 20px;
+ }
+ .button:hover
+ {
+    background-color: rgb(0, 0, 0.2);
+ }
+ #slider0:target ~ .imgcontainer #img0,
+ #slider0:target ~ .imgcontainer #button0
+ {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+ }
+ #slider1:target ~ .imgcontainer #img1,
+ #slider1:target ~ .imgcontainer #button1
+ {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+ }
+ #slider2:target ~ .imgcontainer #img2,
+ #slider2:target ~ .imgcontainer #button2
+ {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+ }
+ 
+ #slider3:target ~ .imgcontainer #img3,
+ #slider3:target ~ .imgcontainer #button3
+ {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+ }
+
+ #slider4:target ~ .imgcontainer #img4,
+ #slider4:target ~ .imgcontainer #button4
+ {
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+ }
+
+ #slider0:target ~ .imgcontainer
+ {
+    left: 60%;
+ }
+ #slider1:target ~ .imgcontainer
+ {
+    left: 40%;
+ }
+ #slider2:target ~ .imgcontainer
+ {
+    left: 0%;
+ }
+ #slider3:target ~ .imgcontainer
+ {
+    left: -40%;
+ }
+ #slider4:target ~ .imgcontainer
+ {
+    left: -60%;
+ }
